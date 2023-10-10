@@ -1,0 +1,67 @@
+*{
+padding: 0;
+margin: 0;
+}
+
+.navbar{
+  display: flex;
+  background-color: aqua;
+  color: rgb(2, 36, 255);
+  height: 80px;
+}
+
+.navbar .container{
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar .container ul li{
+  display: inline-block;
+  margin-left: 20px;
+}
+
+body{
+  background-color: rgb(255, 0, 0);
+}
+
+.container{
+  width: 80%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas: 'Artikel-pplg Artikel-pplg Artikel-pplg Artikel-pplg'
+  'Andri Motivasi Motivasi foto'
+  'pplg pplg pplg pplg'
+  'kelas kelas lorem lorem';
+
+}
+
+.item1{
+  grid-area: Artikel-pplg;
+}
+
+.item2{
+  grid-area: Andri;
+}
+
+.item3{
+  grid-area: Motivasi;
+}
+
+.item4{
+  grid-area: foto;
+}
+
+.item5{
+  grid-area: pplg;
+}
+
+.item6{
+  grid-area: lorem;
+}
+
+.item7{
+  grid-area: kelas;
+}
